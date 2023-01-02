@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 const dataSlider = [
     {
         id: 1,
-        url: 'img/anime.png',
+        url: '/img/anime.png',
         title: 'Watching series',
         desc: 'Watching or reading series can be a great way to skip time. I personally like fantasy series to follow along to.'
     },
     {
         id: 2,
-        url: 'img/music2.png',
+        url: '/img/music2.png',
         title: 'Listening and playing music',
         desc: 'Music is such a mood booster. It helps me organize my mind and mood. I like listening to many genres of music. Sometimes, I do play the guitar because it is fun.'
     },
     {
         id: 3,
-        url: 'img/flowers3.png',
+        url: '/img/flowers3.png',
         title: 'Photographing wild flowers',
         desc: 'I am fond of traveling too. Especially to places with many wild flowers. I like to photograph them so I can enjoy their beauty longer.'
     }
