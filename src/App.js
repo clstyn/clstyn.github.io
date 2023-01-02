@@ -35,7 +35,7 @@ function App() {
   const scrollDown = () => {
     document.getElementById('about').scrollIntoView({ behavior: "smooth" });
   };
-  //https://codesandbox.io/s/parallax-effect-with-react-hooks-2k5hq?file=/src/App.js paralax
+
 
   return (
     <>
@@ -43,8 +43,8 @@ function App() {
       <div className="h-screen w-full bg-cream flex items-center justify-center" >
         <div className="absolute top-0 left-0 w-full h-full z-10 bg-center bg-cover pointer-events-none" style={{backgroundImage: `url(${Pattern})`}}></div>
         <div className="grid grid-cols-2" style={{transform: `translateY(${offset * 0.25}px)`}}>
-          <div className="col-span-2 md:col-span-1 flex justify-center mt-8">
-            <img src={Foto} alt="foto" className='w-1/2 md:w-full'/>
+          <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end mt-8">
+            <img src={Foto} alt="foto" className='w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain'/>
           </div>
           <div className="text-center col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center md:ml-24 max-w-4xl pt-8 md:pt-12">
             <p className='font-body w-full text-base md:text-2xl font-bold'>Hello, my name is</p>
