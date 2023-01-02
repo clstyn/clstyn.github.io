@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         'body': ['Montserrat', 'sans-serif'],
         'heading': 'Adamina'
+      },
+      screens: {
+        'phone': '375px'
       }
     },
   },

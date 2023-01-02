@@ -36,6 +36,10 @@ function App() {
     document.getElementById('about').scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+
 
   return (
     <>
@@ -93,6 +97,10 @@ function App() {
         </div>
         <Slider/>
       </div>
+
+      {/* <button className="absolute bottom-0 right-0 h-8 w-8 bg-slate" onClick={scrollTop}>
+        <ChevronDownIcon className='w-8'/>
+      </button> */}
 
       <Footer/>
     </>
