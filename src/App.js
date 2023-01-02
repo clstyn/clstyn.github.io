@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import './App.css';
 import './index.css';
 import Pattern from './img/frame-flowers.svg';
@@ -9,40 +10,39 @@ import JS from './img/js.png';
 import ReactLogo from './img/react.png';
 import GithubLogo from './img/github.png';
 import TailwindLogo from './img/tailwind.png';
-// import Music from './img/music.png';
-// import Flowers from './img/flowers.png';
-// import Anime from './img/anime.png';
-import { ChevronDownIcon, DocumentIcon } from '@heroicons/react/24/solid';
 import Footer from './components/Footer';
-// import Slider from 'react-slick';
-import { useEffect } from 'react';
 import Slider from './components/Slider';
 import Linimasa from './components/Linimasa';
 import Porto from './components/Portofolio';
 
 function App() {
 
-  const styleSkills = "w-1/3 md:w-1/12 bg-white p-2 xl:p-4 rounded-lg object-contain";
+  const [offset, setOffset] = useState(0);
 
-  const sliderSetting = {
-    arrow: false,
-    dots: true,
-    slidesToShow:1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    infinite: true,
-    speed: 2000,
-    autoPlay: true
-  };
+  useEffect(() => {
+    function handleScroll(){
+      setOffset(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [offset]);
+
+
+  const styleSkills = "w-1/3 md:w-1/12 bg-white p-2 xl:p-4 rounded-lg object-contain";
 
   const scrollDown = () => {
     document.getElementById('about').scrollIntoView({ behavior: "smooth" });
   };
   //https://codesandbox.io/s/parallax-effect-with-react-hooks-2k5hq?file=/src/App.js paralax
+
   return (
     <>
-      <div className="h-screen w-full bg-cream bg-cover bg-center flex items-center justify-center" style={{backgroundImage: `url(${Pattern})`}}>
-        <div className="grid grid-cols-2">
+      {/* <div className="h-screen w-full bg-cream bg-cover bg-center flex items-center justify-center" style={{backgroundImage: `url(${Pattern})`}}> */}
+      <div className="h-screen w-full bg-cream flex items-center justify-center" >
+        <div className="absolute top-0 left-0 w-full h-full z-10 bg-center bg-cover pointer-events-none" style={{backgroundImage: `url(${Pattern})`}}></div>
+        <div className="grid grid-cols-2" style={{transform: `translateY(${offset * 0.25}px)`}}>
           <div className="col-span-2 md:col-span-1 flex justify-center mt-8">
             <img src={Foto} alt="foto" className='w-1/2 md:w-full'/>
           </div>
@@ -55,6 +55,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div id='about' className="bg-dark1">
         <div className="w-full text-center text-cream ">
           <div className='pt-[78px] md:pt-[158px]'>
@@ -81,30 +82,18 @@ function App() {
           </div>
         </div>
       </div>
+
       <Linimasa/>
-      <Porto/>
+
+      {/* <Porto/> */}
+
       <div className="overflow-hidden">
         <div className="max-md:text-xs bg-dark1 md:h-10 px-2 md:px-9 text-cream font-body font-bold tracking-wider">
           My random activities...
         </div>
         <Slider/>
-        {/* <Slider className="h-[371px]" {...sliderSetting}>
-            <div className="h-full bg-cover bg-center flex items-center justify-center " style={{backgroundImage: `url(${Anime})`}}>
-              <p className='text-cream text-center font-body text-2xl font-bold tracking-wider max-w-[771px]'>
-                Watching or reading series can be a great way to skip time. I personally like fantasy series to follow along to.</p>
-            </div>
-            <div className="h-full bg-cover bg-center flex items-center justify-center " style={{backgroundImage: `url(${Music})`}}>
-              <p className='text-cream text-center font-body text-2xl font-bold tracking-wider max-w-[771px]'>
-                Music is such a mood booster. It helps me organize my mind and mood. I like listening to many genres of music. Sometimes, I do play the guitar because it is fun.
-              </p>            
-            </div>
-            <div className="h-full bg-cover bg-center flex items-center justify-center " style={{backgroundImage: `url(${Flowers})`}}>
-              <p className='text-cream text-center font-body text-2xl font-bold tracking-wider max-w-[771px]'>
-                I am fond of traveling too. Especially to places with many wild flowers. I like to photograph them so I can enjoy their beauty longer.                
-              </p>
-            </div>
-        </Slider> */}
       </div>
+
       <Footer/>
     </>
   );
