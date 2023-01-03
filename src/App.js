@@ -45,8 +45,8 @@ function App() {
     <>
       {/* <div className="h-screen w-full bg-cream bg-cover bg-center flex items-center justify-center" style={{backgroundImage: `url(${Pattern})`}}> */}
       <div className="h-screen w-full bg-cream flex items-center justify-center" >
-        <div className="absolute top-0 left-0 w-full h-full z-10 bg-center bg-cover pointer-events-none" style={{backgroundImage: `url(${Pattern})`}}></div>
-        <div className="grid grid-cols-2" style={{transform: `translateY(${offset * 0.25}px)`}}>
+        <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover pointer-events-none z-10" style={{backgroundImage: `url(${Pattern})`}}></div>
+        <div className="grid grid-cols-2  " style={{transform: `translateY(${offset * 0.25}px)`, opacity: `calc(1 - ${offset * 0.0018})`}}>
           <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end mt-8">
             <img src={Foto} alt="foto" className='w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain'/>
           </div>
@@ -97,9 +97,9 @@ function App() {
         </div>
         <Slider/>
       </div>
-
-      {/* <button className="absolute bottom-0 right-0 h-8 w-8 bg-slate" onClick={scrollTop}>
-        <ChevronDownIcon className='w-8'/>
+{/* 
+      <button className="absolute bottom-0 right-0 h-8 w-8 bg-slate" onClick={scrollTop}>
+      <ChevronDownIcon className='w-8'/>
       </button> */}
 
       <Footer/>
