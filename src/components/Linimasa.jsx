@@ -18,21 +18,21 @@ export default function Linimasa() {
                 <div className="grid grid-cols-9 grid-rows-2 gap-6 2xl:mt-24">
                     <div className="text-cream   row-start-1 row-start-1 row-span-2">
                         <p className="font-body text-3xl max-w-[479px]">Graduated from <b>SMA Negeri 2 Semarang</b>.</p>
-                        <h1 className="text-5xl font-heading mt-[11px]">2020</h1>
+                        <h1 className="text-5xl font-heading mt-[11px] border-2 border-cream rounded px-2 py-1 inline-block">2020</h1>
                     </div>
                     <div className="text-cream   row-start-2">
                         <p className="font-body text-3xl max-w-[479px]">Entered college, majoring in <b>Information Engineering</b>.</p>
                     </div>
                     <div className="text-cream   row-start-1 row-start-1 row-span-2">
                         <p className="font-body text-3xl max-w-[479px]">Took part of <b>Find IT! 2021</b> as a Staff of Events Division.</p>
-                        <h1 className="text-5xl font-heading mt-[11px]">2021</h1>
+                        <h1 className="text-5xl font-heading mt-[11px] border-2 border-cream rounded px-2 py-1 inline-block">2021</h1>
                     </div>
                     <div className="text-cream   row-start-2">
                         <p className="font-body text-3xl max-w-[479px]">Took part of Gelanggang Expo and Porsenigama 2021 as a Staff of IT Division. The team is responsible to create a static website for the events. Worked closely with other divisions as well.</p>
                     </div>
                     <div className="text-cream   row-start-1 row-span-2">
                         <p className="font-body text-3xl max-w-[479px]">Took part of NESCO 2022 as a Staff of Web Division. Mainly designing the website.</p>
-                        <h1 className="text-5xl font-heading mt-[11px]">2022</h1>
+                        <h1 className="text-5xl font-heading mt-[11px] border-2 border-cream rounded px-2 py-1 inline-block">2022</h1>
                     </div>
                     <div className="text-cream   row-start-2">
                         <p className="font-body text-3xl max-w-[479px]">Worked as an assistant for <b>Basic Programming</b> laboratory practices.</p>
@@ -45,7 +45,7 @@ export default function Linimasa() {
                     </div>
                     <div className="text-cream   row-start-1 row-span-2">
                         <p className="font-body text-3xl max-w-[479px]">Started internship in <b>PT Graphie Global Interaktif</b> as a web developer.</p>
-                        <h1 className="text-5xl font-heading ">2023</h1>
+                        <h1 className="text-5xl font-heading border-2 border-cream rounded px-2 py-1 inline-block">2023</h1>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ export default function Linimasa() {
             <div className="relative px-[150px] py-[61px]">
                 <div className="grid grid-rows-9 grid-cols-2 gap-8 2xl:mt-24">
                     <div className="text-cream   col-start-1 text-right  max-w-full flex-col">
-                        <h1 className="font-heading text-2xl mb-4">2020</h1>
+                        <h1 className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2020</h1>
                         <p className="font-body text-xl">Graduated from <b>SMA Negeri 2 Semarang</b>.</p>
                     </div>
                     <div></div>
@@ -65,7 +65,7 @@ export default function Linimasa() {
                         <p className="font-body text-xl ">Entered college, majoring in <b>Information Engineering</b>.</p>
                     </div>
                     <div className="text-cream   col-start-1 text-right  max-w-full flex-col">
-                        <h1 className="text-2xl font-heading mb-4">2021</h1>
+                        <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2021</h1>
                         <p className="font-body text-xl ">Took part of <b>Find IT! 2021</b> as a Staff of Events Division.</p>
                     </div>
                     <div className="col-start-2"></div>
@@ -73,7 +73,7 @@ export default function Linimasa() {
                         <p className="font-body text-xl ">Took part of Gelanggang Expo and Porsenigama 2021 as a Staff of IT Division. The team is responsible to create a static website for the events. Worked closely with other divisions as well.</p>
                     </div>
                     <div className="text-cream   col-start-1 text-right  max-w-full flex-col">
-                        <h1 className="text-2xl font-heading mb-4">2022</h1>
+                        <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2022</h1>
                         <p className="font-body text-xl ">Took part of NESCO 2022 as a Staff of Web Division. Mainly designing the website.</p>
                     </div>
                     <div></div>
@@ -88,7 +88,7 @@ export default function Linimasa() {
                         <p className="font-body text-xl ">Volunteered in <b>Festival Gadjah Mada 2022</b> in IT Division. Mainly designing the website.</p>
                     </div>
                     <div className="text-cream   col-start-1 text-right  max-w-full flex-col">
-                        <h1 className="text-2xl font-heading mb-4">2023</h1>
+                        <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2023</h1>
                         <p className="font-body text-xl ">Started internship in <b>PT Graphie Global Interaktif</b> as a web developer.</p>
                     </div>
                 </div>
@@ -101,21 +101,21 @@ export default function Linimasa() {
             <img src={Line2} alt="" className="absolute left-[44px] phone:left-[78px] pt-[58px] pb-[58px]"/>
             <div className="flex flex-col text-cream max-w-[168px] ml-[76px] phone:ml-[110px] my-[58px]">
                 <div className="mb-14">
-                    <h1 className="font-heading text-2xl mb-4">2020</h1>
+                    <h1 className="font-heading text-2xl mb-4 font-bold border-2 border-cream rounded px-2 py-1 inline-block">2020</h1>
                     <p className="font-body">Graduated from <b>SMA Negeri 2 Semarang</b>.</p>
                 </div>
                 <div className="mb-14">
                     <p className="font-body">Entered college, majoring in <b>Information Engineering</b>.</p>
                 </div>
                 <div className="mb-14">
-                    <div className="font-heading text-2xl mb-4">2021</div>
+                    <div className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2021</div>
                     <p className="font-body">Took part of <b>Find IT! 2021</b> as a Staff of Events Division.</p>
                 </div>
                 <div className="mb-14">
                     <p className="font-body">Took part of Gelanggang Expo and Porsenigama 2021 as a Staff of IT Division. The team is responsible to create a static website for the events. Worked closely with other divisions as well.</p>
                 </div>
                 <div className="mb-14">
-                    <h1 className="font-heading text-2xl mb-4">2022</h1>
+                    <h1 className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2022</h1>
                     <p className="font-body">Took part of NESCO 2022 as a Staff of Web Division. Mainly designing the website.</p>
                     
                 </div>
@@ -129,7 +129,7 @@ export default function Linimasa() {
                     <p className="font-body">Volunteered in <b>Festival Gadjah Mada 2022</b> in IT Division. Mainly designing the website.</p>
                 </div>
                 <div className="mb-14">
-                    <h1 className="text-2xl font-heading mb-4">2023</h1>
+                    <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2023</h1>
                     <p className="font-body">Started internship in <b>PT Graphie Global Interaktif</b> as a web developer.</p>
                     
                 </div>

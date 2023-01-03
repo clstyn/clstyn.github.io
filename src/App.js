@@ -3,7 +3,7 @@ import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import './App.css';
 import './index.css';
 import Pattern from './img/frame-flowers.svg';
-import Foto from './img/fotodiri.png';
+import Foto from './img/fotodiri2.jpeg';
 import HTML from './img/html-5.png';
 import CSS from './img/css-3.png';
 import JS from './img/js.png';
@@ -48,7 +48,7 @@ function App() {
         <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover pointer-events-none z-10" style={{backgroundImage: `url(${Pattern})`}}></div>
         <div className="grid grid-cols-2  " style={{transform: `translateY(${offset * 0.25}px)`, opacity: `calc(1 - ${offset * 0.0018})`}}>
           <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end mt-8">
-            <img src={Foto} alt="foto" className='w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain'/>
+            <img src={Foto} alt="foto" className='w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain rounded-[999px]'/>
           </div>
           <div className="text-center col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center md:ml-24 max-w-4xl pt-8 md:pt-12">
             <p className='font-body w-full text-base md:text-2xl font-bold'>Hello, my name is</p>
