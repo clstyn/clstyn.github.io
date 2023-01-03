@@ -108,14 +108,14 @@ export default function Linimasa() {
                     <p className="font-body">Entered college, majoring in <b>Information Engineering</b>.</p>
                 </div>
                 <div className="mb-14">
-                    <div className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2021</div>
+                    <div className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block font-bold">2021</div>
                     <p className="font-body">Took part of <b>Find IT! 2021</b> as a Staff of Events Division.</p>
                 </div>
                 <div className="mb-14">
                     <p className="font-body">Took part of Gelanggang Expo and Porsenigama 2021 as a Staff of IT Division. The team is responsible to create a static website for the events. Worked closely with other divisions as well.</p>
                 </div>
                 <div className="mb-14">
-                    <h1 className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2022</h1>
+                    <h1 className="font-heading text-2xl mb-4 border-2 border-cream rounded px-2 py-1 inline-block font-bold">2022</h1>
                     <p className="font-body">Took part of NESCO 2022 as a Staff of Web Division. Mainly designing the website.</p>
                     
                 </div>
@@ -129,7 +129,7 @@ export default function Linimasa() {
                     <p className="font-body">Volunteered in <b>Festival Gadjah Mada 2022</b> in IT Division. Mainly designing the website.</p>
                 </div>
                 <div className="mb-14">
-                    <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block">2023</h1>
+                    <h1 className="text-2xl font-heading mb-4 border-2 border-cream rounded px-2 py-1 inline-block font-bold">2023</h1>
                     <p className="font-body">Started internship in <b>PT Graphie Global Interaktif</b> as a web developer.</p>
                     
                 </div>
