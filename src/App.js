@@ -44,8 +44,9 @@ function App() {
   return (
     <>
       {/* <div className="h-screen w-full bg-cream bg-cover bg-center flex items-center justify-center" style={{backgroundImage: `url(${Pattern})`}}> */}
-      <div className="h-screen w-full bg-cream flex items-center justify-center" >
-        <div className="absolute top-0 left-0 w-full h-full bg-center bg-cover pointer-events-none z-10" style={{backgroundImage: `url(${Pattern})`}}></div>
+      <div className="h-screen bg-cream flex items-center justify-center" >
+        {/* <img src={Pattern} alt="" className='top-0 w-full h-screen object-fill pointer-events-none z-10'/> */}
+        <div className="absolute top-0 w-full h-full bg-center bg-cover pointer-events-none z-10" style={{backgroundImage: `url(${Pattern})`}}></div>
         <div className="grid grid-cols-2  " style={{transform: `translateY(${offset * 0.25}px)`, opacity: `calc(1 - ${offset * 0.0018})`}}>
           <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end mt-8">
             <img src={Foto} alt="foto" className='w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain rounded-[999px]'/>
