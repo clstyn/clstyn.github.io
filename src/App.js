@@ -1,24 +1,32 @@
 import { useEffect, useState } from "react";
+
 import {
   ChevronDownIcon,
   ChevronDoubleUpIcon,
 } from "@heroicons/react/24/solid";
+
 import "./App.css";
 import "./index.css";
-import Pattern from "./img/frame-flowers.svg";
+
+// Assets
 import Foto from "./img/fotodiri2.jpeg";
+import FotoSection2 from "./img/fotopersonal.png";
+import Pattern from "./img/frame-flowers.svg";
+
+//Components
+import Footer from "./components/Footer";
+import Slider from "./components/Slider";
+import Linimasa from "./components/Linimasa";
+import Porto from "./components/Portofolio";
+import Navbar from "./components/Navbar";
+
+// Tools Logo
 import HTML from "./img/html-5.png";
 import CSS from "./img/css-3.png";
 import JS from "./img/js.png";
 import ReactLogo from "./img/react.png";
 import GithubLogo from "./img/github.png";
 import TailwindLogo from "./img/tailwind.png";
-import Footer from "./components/Footer";
-import Slider from "./components/Slider";
-import Linimasa from "./components/Linimasa";
-import Porto from "./components/Portofolio";
-import { Navbar } from "./components/Navbar";
-import FotoSection2 from "./img/fotopersonal.png";
 
 function App() {
   const [offset, setOffset] = useState(0);
@@ -58,7 +66,10 @@ function App() {
 
   return (
     <>
+      {/* Navbar */}
       <Navbar offset={offset} />
+
+      {/* Hero */}
       <div className="h-[650px] md:h-screen bg-cream flex items-center justify-center">
         <div
           className="absolute top-0 w-full h-[650px] md:h-full bg-center bg-cover pointer-events-none z-10"
@@ -95,29 +106,30 @@ function App() {
         </div>
       </div>
 
+      {/* About */}
       <div id="about" className="bg-dark1 ">
-        <div className="w-full text-cream grid grid-cols-2 mt-16 md:mt-32 min-h-screen">
-          <div className="flex w-full h-full items-start justify-center">
-            <div className="bg-cream rounded-full h-3/4 w-1/2 px-12 py-8">
+        <div className="w-full text-cream grid grid-cols-1 xl:grid-cols-2 mt-16 md:mt-32 min-h-screen">
+          <div className="flex w-full h-72 sm:h-full items-start justify-center">
+            <div className="bg-cream rounded-full h-full xl:h-3/4 w-1/2 px-4 py-2 md:px-8 md:py-4 xl:px-12 xl:py-8">
               <img
                 src={FotoSection2}
                 alt="foto2"
-                className="absolute translate-y-12"
+                className="object-cover translate-y-4 xl:translate-y-12"
               />
             </div>
           </div>
-          <div className="place-self-center">
-            <h1 className="font-heading text-3xl md:text-5xl my-8 leading-loose">
+          <div className="place-self-center max-md:px-4 max-xl:px-12 max-xl:mb-16 max-xl:mt-12">
+            <h1 className="font-heading max-xl:text-center text-xl md:text-5xl my-8 leading-loose">
               About Me
             </h1>
-            <p className="font-body md:w-3/4 md:text-3xl mb-8">
+            <p className="font-body md:w-3/4 md:text-3xl mb-8 max-xl:text-justify max-xl:mx-auto">
               <span className="font-bold">Hello there!</span> 🌱 I'm currently a
               student at Gadjah Mada University, diving headfirst into the world
               of Information Engineering. 📚 Through my academic journey, I've
               been lucky to explore the fascinating realm of website
               development, with a special focus on front-end work.
             </p>
-            <p className="font-body md:w-3/4 md:text-3xl">
+            <p className="font-body md:w-3/4 md:text-3xl max-xl:mx-auto max-xl:text-justify">
               💻✨ I'm just a regular person who happens to adapt well to new
               challenges and enjoys working harmoniously in team settings. 🤝
               Honesty and a strong sense of responsibility are values I hold
@@ -126,26 +138,18 @@ function App() {
               create some wonders together! 🌟
             </p>
           </div>
-          {/* <div className="pt-[91px] pb-[78px] md:pt-[171px] md:pb-[158px]">
-            <h1 className="font-heading text-3xl md:text-5xl">SKILLS</h1>
-            <div className="mt-[34px] flex justify-center ">
-              <div className="flex flex-wrap gap-4 md:gap-6 w-1/2 md:w-5/6 xl:w-7/8 max-w-5xl justify-center ">
-                <img className={styleSkills} src={HTML} alt="" />
-                <img className={styleSkills} src={CSS} alt="" />
-                <img className={styleSkills} src={JS} alt="" />
-                <img className={styleSkills} src={ReactLogo} alt="" />
-                <img className={styleSkills} src={TailwindLogo} alt="" />
-                <img className={styleSkills} src={GithubLogo} alt="" />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
 
+      {/* Timeline */}
       {/* <Linimasa /> */}
 
+      {/* Portofolio */}
       {/* <Porto/> */}
 
+      {/* Tools */}
+
+      {/* Random */}
       {/* <div className="overflow-hidden">
         <div className="max-md:text-xs bg-dark1 md:h-10 px-2 md:px-9 text-cream font-body font-bold tracking-wider">
           My random activities...
@@ -153,6 +157,7 @@ function App() {
         <Slider />
       </div> */}
 
+      {/* Scroll To Top */}
       <button
         id="toTopButton"
         className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-cream border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all"
@@ -161,6 +166,7 @@ function App() {
         <ChevronDoubleUpIcon className="w-8 text-dark1 font-bold mx-auto" />
       </button>
 
+      {/* Footer */}
       <Footer />
     </>
   );
