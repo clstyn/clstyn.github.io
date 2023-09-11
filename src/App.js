@@ -12,6 +12,9 @@ import "./index.css";
 import Foto from "./img/fotodiri2.jpeg";
 import FotoSection2 from "./img/fotopersonal.png";
 import Pattern from "./img/frame-flowers.svg";
+import Flower1 from "./img/flowers/1.png";
+import Flower2 from "./img/flowers/2.png";
+import Flower3 from "./img/flowers/3.png";
 
 //Components
 import Footer from "./components/Footer";
@@ -65,7 +68,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="overflow-hidden">
       {/* Navbar */}
       <Navbar offset={offset} />
 
@@ -89,11 +92,11 @@ function App() {
               className="w-1/2 md:w-[80%] xl:w-full max-w-[435px] object-contain rounded-[999px]"
             />
           </div>
-          <div className="text-center col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center md:ml-24 max-w-4xl pt-8 md:pt-12">
-            <p className="font-body w-full text-base md:text-2xl font-bold">
+          <div className="text-center col-span-2 md:col-span-1 flex flex-col items-center md:items-start justify-center md:ml-8 2xl:ml-24 max-w-4xl pt-8 md:pt-12">
+            <p className="font-body w-full text-base md:text-lg m2xl:text-2xl font-bold">
               Hello, my name is
             </p>
-            <h1 className="font-heading text-2xl md:text-4xl typewriter">
+            <h1 className="font-heading text-2xl md:text-2xl 2xl:text-4xl typewriter">
               Fiorenza Celestyn
             </h1>
             <button
@@ -107,14 +110,19 @@ function App() {
       </div>
 
       {/* About */}
-      <div id="about" className="bg-dark1 ">
+      <div id="about" className="bg-dark1 relative">
         <div className="w-full text-cream grid grid-cols-1 xl:grid-cols-2 mt-16 md:mt-32 min-h-screen">
           <div className="flex w-full h-72 sm:h-full items-start justify-center">
-            <div className="bg-cream rounded-full h-full xl:h-3/4 w-1/2 px-4 py-2 md:px-8 md:py-4 xl:px-12 xl:py-8">
+            <div className="bg-cream rounded-full h-full xl:h-3/4 w-1/2 px-4 py-2 md:px-8 md:py-4 xl:px-12 xl:py-8 relative">
               <img
                 src={FotoSection2}
                 alt="foto2"
                 className="object-cover translate-y-4 xl:translate-y-12"
+              />
+              <img
+                src={Flower1}
+                className="absolute -bottom-24 left-0 scale-110 max-sm:-translate-y-12"
+                alt="flower1 ornamen"
               />
             </div>
           </div>
@@ -139,6 +147,11 @@ function App() {
             </p>
           </div>
         </div>
+        <img
+          src={Flower2}
+          className="absolute -top-16 right-0 animate-flick hidden xl:block"
+          alt="flower2 ornamen"
+        />
       </div>
 
       {/* Timeline */}
@@ -160,7 +173,7 @@ function App() {
       {/* Scroll To Top */}
       <button
         id="toTopButton"
-        className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-cream border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all"
+        className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all"
         onClick={scrollTop}
       >
         <ChevronDoubleUpIcon className="w-8 text-dark1 font-bold mx-auto" />
@@ -168,7 +181,7 @@ function App() {
 
       {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -35,9 +35,9 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center md:justify-between font-heading text-xs md:text-lg py-2.5 px-2 md:px-9 absolute bottom-0 w-full">
-        <p>Fiorenza Celestyn © 2023</p>
-        <p className="">
+      <div className="flex flex-col md:flex-row justify-center md:justify-between font-heading text-xs md:text-lg py-2.5 px-2 md:px-9 w-full mt-12">
+        <p className="max-md:text-center">Fiorenza Celestyn © 2023</p>
+        <p className="max-md:text-center">
           Image by{" "}
           <span>
             <a

@@ -51,6 +51,36 @@
     50% { border-color: #080A0B; }
   }
 
+  .navbar-phone-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-phone-icon.open {
+    transform: rotate(90deg);
+  }
+  
+  .navbar-menu {
+    transition: transform 0.8s ease;
+  }
+  
+  .navbar-menu.open {
+    transform: translateY(0);
+  }
+  
+  .navbar-menu.closed {
+    transform: translateY(-100%);
+  }
+
+  .animate-flick {
+    animation: flick 3s infinite
+  }
+
+  @keyframes flick {
+    from {opacity: 70%;}
+    50% {opacity: 100%;}
+    to {opacity: 70%;}
+  }
+
   body {
     background-color: #080A0B;
   }
