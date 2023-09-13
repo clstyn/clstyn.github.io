@@ -81,6 +81,13 @@
     to {opacity: 70%;}
   }
 
+  .slider-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 2em;
+  }
+
   body {
     background-color: #080A0B;
   }

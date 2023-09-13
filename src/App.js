@@ -60,7 +60,9 @@ function App() {
     "w-1/3 md:w-1/12 bg-white p-2 xl:p-4 rounded-lg object-contain";
 
   const scrollDown = () => {
-    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("about")
+      .scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const scrollTop = () => {
@@ -73,7 +75,7 @@ function App() {
       <Navbar offset={offset} />
 
       {/* Hero */}
-      <div className="h-[650px] md:h-screen bg-cream flex items-center justify-center">
+      <section className="h-[650px] md:h-screen bg-cream flex items-center justify-center">
         <div
           className="absolute top-0 w-full h-[650px] md:h-full bg-center bg-cover pointer-events-none z-10"
           style={{ backgroundImage: `url(${Pattern})` }}
@@ -96,7 +98,7 @@ function App() {
             <p className="font-body w-full text-base md:text-lg m2xl:text-2xl font-bold">
               Hello, my name is
             </p>
-            <h1 className="font-heading text-2xl md:text-2xl 2xl:text-4xl typewriter">
+            <h1 className="max-w-fit font-heading text-2xl md:text-2xl 2xl:text-4xl typewriter">
               Fiorenza Celestyn
             </h1>
             <button
@@ -107,10 +109,10 @@ function App() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About */}
-      <div id="about" className="bg-dark1 relative">
+      <section id="about" className="bg-dark1 relative">
         <div className="w-full text-cream grid grid-cols-1 xl:grid-cols-2 mt-16 md:mt-32 min-h-screen">
           <div className="flex w-full h-72 sm:h-full items-start justify-center">
             <div className="bg-cream rounded-full h-full xl:h-3/4 w-1/2 px-4 py-2 md:px-8 md:py-4 xl:px-12 xl:py-8 relative">
@@ -152,13 +154,13 @@ function App() {
           className="absolute -top-16 right-0 animate-flick hidden xl:block"
           alt="flower2 ornamen"
         />
-      </div>
+      </section>
 
       {/* Timeline */}
       {/* <Linimasa /> */}
 
       {/* Portofolio */}
-      {/* <Porto/> */}
+      <Porto />
 
       {/* Tools */}
 
@@ -173,7 +175,7 @@ function App() {
       {/* Scroll To Top */}
       <button
         id="toTopButton"
-        className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all"
+        className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all hidden"
         onClick={scrollTop}
       >
         <ChevronDoubleUpIcon className="w-8 text-dark1 font-bold mx-auto" />

@@ -5,7 +5,7 @@ import Github from "../img/github.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-choco h-56 md:h-64 relative text-dark1">
+    <footer className="bg-choco h-56 md:h-64 relative text-dark1 border-t-2 border-dark1">
       <div className="flex flex-col items-center w-full pt-8 md:pt-16">
         <h1 className="font-heading text-2xl font-bold mb-4">My Links</h1>
         <div className="flex gap-6 pt-4">
