@@ -5,6 +5,7 @@ const dataPorto = [
     year: "2023",
     desc: "Created a website to promote the boarding house business in Palihan, Temon, Kulon Progo, as a part of my Community Service Program (KKN-PPM UGM) agenda.",
     imgUrl: "img/portos/palihan.png",
+    link: "https://www.palihankost.web.id/",
     stacks: [
       {
         nama: "React",
@@ -34,6 +35,7 @@ const dataPorto = [
     desc: "A web-based application for a tourist attraction recommendation system that implements content-based filtering",
     year: "2023",
     imgUrl: "img/portos/destimatch.png",
+    link: "https://desti-match-bnmaoa500-clstyn.vercel.app/",
     stacks: [
       {
         nama: "Figma",
@@ -71,6 +73,7 @@ const dataPorto = [
     desc: "A web3 project given in my internship period at PT Graphie Global Interaktif. This is a marketplace to sell and buy digital assets as NFT.",
     year: "2023",
     imgUrl: "img/portos/pstore.png",
+    link: "https://graphie.web.id/dev/fio/marketplace/",
     stacks: [
       {
         nama: "Figma",
@@ -104,6 +107,7 @@ const dataPorto = [
     desc: "A web-based application about medicine inventory system in a pharmacy that implements CRUD. This application is built using MERN stack",
     year: "2022",
     imgUrl: "img/portos/pharmaweb.png",
+    link: "https://pharma-web-front-end.vercel.app/",
     stacks: [
       {
         nama: "React",

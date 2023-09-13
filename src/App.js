@@ -175,7 +175,7 @@ function App() {
       {/* Scroll To Top */}
       <button
         id="toTopButton"
-        className="fixed bottom-12 right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all hidden"
+        className="fixed bottom-4 right-4 md:bottom-12 md:right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all hidden"
         onClick={scrollTop}
       >
         <ChevronDoubleUpIcon className="w-8 text-dark1 font-bold mx-auto" />

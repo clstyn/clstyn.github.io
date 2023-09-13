@@ -53,7 +53,7 @@ export default function Porto() {
         Portofolio
       </h1>
       <p className="text-center text-sm md:text-xl my-4 font-body font-semibold">
-        This thing itself is a portofolio!
+        This website itself is a portofolio!
       </p>
 
       {/* Carousel */}
@@ -61,11 +61,11 @@ export default function Porto() {
         <div className="w-8 md:w-12 h-full flex items-center">
           <BackwardIcon
             id="prev-icon-desk"
-            className="hidden md:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
+            className="hidden xl:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
           <BackwardIcon
             id="prev-icon-phone"
-            className="md:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
+            className="xl:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
         </div>
 
@@ -82,11 +82,11 @@ export default function Porto() {
         <div className="w-8 md:w-12 h-full flex items-center">
           <ForwardIcon
             id="next-icon-desk"
-            className="hidden md:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
+            className="hidden xl:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
           <ForwardIcon
             id="next-icon-phone"
-            className="md:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
+            className="xl:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
         </div>
       </div>
