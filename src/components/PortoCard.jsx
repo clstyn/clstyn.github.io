@@ -10,7 +10,7 @@ export const PortoCard = ({ title, desc, year, imgUrl, stacks, link }) => {
           className="object-cover aspect-video rounded-t-lg"
         />
       </div>
-      <div className="p-4 md:p-8 font-body text-black">
+      <div className="p-4 md:p-8 font-body text-black overflow-y-scroll">
         <p className="text-lg md:text-3xl font-semibold">{title}</p>
         <p className="text-sm md:text-xl font-semibold">{year}</p>
         <p className="text-xs md:text-lg text-justify">{desc}</p>
@@ -22,6 +22,22 @@ export const PortoCard = ({ title, desc, year, imgUrl, stacks, link }) => {
             Visit
           </a>
         ) : null}
+        <div className="flex flex-wrap items-center mt-8 gap-6">
+          {stacks?.map((item) => {
+            return (
+              <div
+                className="w-16 h-16 flex items-center justify-center"
+                key={item.nama}
+              >
+                <img
+                  src={item.logoUrl}
+                  alt={item.nama}
+                  className="object-contain aspect-square"
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

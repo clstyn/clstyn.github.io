@@ -9,23 +9,23 @@ const dataPorto = [
     stacks: [
       {
         nama: "React",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
       },
       {
         nama: "Leaflet",
-        logoUrl: "",
+        logoUrl: "img/logos/leaflet.png",
       },
       {
         nama: "MongoDB",
-        logoUrl: "",
+        logoUrl: "img/logos/mongodb.png",
       },
       {
         nama: "Express",
-        logoUrl: "",
+        logoUrl: "img/logos/expressjs.png",
       },
       {
         nama: "Firebase",
-        logoUrl: "",
+        logoUrl: "img/logos/firebase.png",
       },
     ],
   },
@@ -38,32 +38,32 @@ const dataPorto = [
     link: "https://desti-match-bnmaoa500-clstyn.vercel.app/",
     stacks: [
       {
-        nama: "Figma",
-        logoUrl: "",
-      },
-      {
         nama: "JavaScript",
-        logoUrl: "",
+        logoUrl: "img/logos/javascript.png",
       },
       {
         nama: "React",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
       },
       {
         nama: "PostgreSQL",
-        logoUrl: "",
+        logoUrl: "img/logos/postgresql.png",
       },
       {
         nama: "Express",
-        logoUrl: "",
+        logoUrl: "img/logos/expressjs.png",
       },
       {
         nama: "Python",
-        logoUrl: "",
+        logoUrl: "img/logos/python.png",
       },
       {
         nama: "Flask",
-        logoUrl: "",
+        logoUrl: "img/logos/flask.png",
+      },
+      {
+        nama: "Figma",
+        logoUrl: "img/logos/figma.png",
       },
     ],
   },
@@ -76,28 +76,28 @@ const dataPorto = [
     link: "https://graphie.web.id/dev/fio/marketplace/",
     stacks: [
       {
-        nama: "Figma",
-        logoUrl: "",
-      },
-      {
         nama: "JavaScript",
-        logoUrl: "",
+        logoUrl: "img/logos/javascript.png",
       },
       {
         nama: "React",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
       },
       {
         nama: "Solidity",
-        logoUrl: "",
+        logoUrl: "img/logos/solidity.png",
       },
       {
         nama: "Ethereum",
-        logoUrl: "",
+        logoUrl: "img/logos/ethereum.png",
       },
       {
         nama: "Truffle",
-        logoUrl: "",
+        logoUrl: "img/logos/truffle.png",
+      },
+      {
+        nama: "Figma",
+        logoUrl: "img/logos/figma.png",
       },
     ],
   },
@@ -111,23 +111,15 @@ const dataPorto = [
     stacks: [
       {
         nama: "React",
-        logoUrl: "",
-      },
-      {
-        nama: "Leaflet",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
       },
       {
         nama: "MongoDB",
-        logoUrl: "",
+        logoUrl: "img/logos/mongodb.png",
       },
       {
         nama: "Express",
-        logoUrl: "",
-      },
-      {
-        nama: "Firebase",
-        logoUrl: "",
+        logoUrl: "img/logos/expressjs.png",
       },
     ],
   },
@@ -140,15 +132,15 @@ const dataPorto = [
     stacks: [
       {
         nama: "Figma",
-        logoUrl: "",
+        logoUrl: "img/logos/figma.png",
       },
       {
         nama: "JavaScript",
-        logoUrl: "",
+        logoUrl: "img/logos/javascript.png",
       },
       {
         nama: "React",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
       },
     ],
   },
@@ -160,16 +152,16 @@ const dataPorto = [
     imgUrl: "img/portos/gelex22.png",
     stacks: [
       {
-        nama: "Figma",
-        logoUrl: "",
-      },
-      {
-        nama: "JavaScript",
-        logoUrl: "",
+        nama: "TypeScript",
+        logoUrl: "img/logos/typescript.png",
       },
       {
         nama: "NextJS",
-        logoUrl: "",
+        logoUrl: "img/logos/nextjs.png",
+      },
+      {
+        nama: "Figma",
+        logoUrl: "img/logos/figma.png",
       },
     ],
   },
@@ -181,16 +173,16 @@ const dataPorto = [
     imgUrl: "img/portos/NESCO.png",
     stacks: [
       {
-        nama: "Figma",
-        logoUrl: "",
-      },
-      {
         nama: "JavaScript",
-        logoUrl: "",
+        logoUrl: "img/logos/javascript.png",
       },
       {
         nama: "React",
-        logoUrl: "",
+        logoUrl: "img/logos/reactjs.png",
+      },
+      {
+        nama: "Figma",
+        logoUrl: "img/logos/figma.png",
       },
     ],
   },
@@ -203,7 +195,7 @@ const dataPorto = [
     stacks: [
       {
         nama: "Figma",
-        logoUrl: "",
+        logoUrl: "img/logos/figma.png",
       },
     ],
   },
@@ -216,11 +208,11 @@ const dataPorto = [
     stacks: [
       {
         nama: "Figma",
-        logoUrl: "",
+        logoUrl: "img/logos/figma.png",
       },
       {
         nama: "JSON",
-        logoUrl: "",
+        logoUrl: "img/logos/json.png",
       },
     ],
   },

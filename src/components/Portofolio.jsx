@@ -57,7 +57,7 @@ export default function Porto() {
       </p>
 
       {/* Carousel */}
-      <div className="relative md:mt-24 px-4 md:px-12 overflow-hidden flex w-full h-[360px] md:h-[560px]">
+      <div className="relative md:mt-24 px-4 md:px-12 overflow-hidden flex w-full h-[360px] md:h-[500px] xl:h-[590px]">
         <div className="w-8 md:w-12 h-full flex items-center">
           <BackwardIcon
             id="prev-icon-desk"

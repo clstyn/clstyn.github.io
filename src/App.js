@@ -14,7 +14,6 @@ import FotoSection2 from "./img/fotopersonal.png";
 import Pattern from "./img/frame-flowers.svg";
 import Flower1 from "./img/flowers/1.png";
 import Flower2 from "./img/flowers/2.png";
-import Flower3 from "./img/flowers/3.png";
 
 //Components
 import Footer from "./components/Footer";
@@ -22,6 +21,7 @@ import Slider from "./components/Slider";
 import Linimasa from "./components/Linimasa";
 import Porto from "./components/Portofolio";
 import Navbar from "./components/Navbar";
+import Tools from "./components/Tools";
 
 // Tools Logo
 import HTML from "./img/html-5.png";
@@ -55,9 +55,6 @@ function App() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [offset]);
-
-  const styleSkills =
-    "w-1/3 md:w-1/12 bg-white p-2 xl:p-4 rounded-lg object-contain";
 
   const scrollDown = () => {
     document
@@ -132,7 +129,7 @@ function App() {
             <h1 className="font-heading max-xl:text-center text-xl md:text-5xl my-8 leading-loose">
               About Me
             </h1>
-            <p className="font-body md:w-3/4 md:text-3xl mb-8 max-xl:text-justify max-xl:mx-auto">
+            <p className="font-body md:w-3/4 md:text-3xl mb-8 max-xl:text-justify max-xl:mx-auto relative z-20">
               <span className="font-bold">Hello there!</span> 🌱 I'm currently a
               student at Gadjah Mada University, diving headfirst into the world
               of Information Engineering. 📚 Through my academic journey, I've
@@ -151,7 +148,7 @@ function App() {
         </div>
         <img
           src={Flower2}
-          className="absolute -top-16 right-0 animate-flick hidden xl:block"
+          className="absolute -top-16 right-0 animate-flick hidden xl:block z-10"
           alt="flower2 ornamen"
         />
       </section>
@@ -163,6 +160,7 @@ function App() {
       <Porto />
 
       {/* Tools */}
+      <Tools />
 
       {/* Random */}
       {/* <div className="overflow-hidden">
@@ -175,7 +173,7 @@ function App() {
       {/* Scroll To Top */}
       <button
         id="toTopButton"
-        className="fixed bottom-4 right-4 md:bottom-12 md:right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transition-all hidden"
+        className="fixed bottom-4 right-4 md:bottom-12 md:right-12 h-12 md:h-16 aspect-square rounded-xl bg-choco border border-dark1 z-50 hover:-translate-x-1 hover:-translate-y-1 transform transition-all duration-300 hidden"
         onClick={scrollTop}
       >
         <ChevronDoubleUpIcon className="w-8 text-dark1 font-bold mx-auto" />
