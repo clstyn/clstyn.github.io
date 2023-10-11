@@ -19,31 +19,31 @@ export default function Porto() {
       container.scrollLeft = container.scrollLeft - width / 2;
     };
 
-    const buttonNextPhone = () => {
-      let width = container.clientWidth;
-      container.scrollLeft = container.scrollLeft + width;
-    };
+    // const buttonNextPhone = () => {
+    //   let width = container.clientWidth;
+    //   container.scrollLeft = container.scrollLeft + width;
+    // };
 
-    const buttonPrevPhone = () => {
-      let width = container.clientWidth;
-      container.scrollLeft = container.scrollLeft - width;
-    };
+    // const buttonPrevPhone = () => {
+    //   let width = container.clientWidth;
+    //   container.scrollLeft = container.scrollLeft - width;
+    // };
 
     const prevButtonDesk = document.getElementById("prev-icon-desk");
     const nextButtonDesk = document.getElementById("next-icon-desk");
-    const prevButtonPhone = document.getElementById("prev-icon-phone");
-    const nextButtonPhone = document.getElementById("next-icon-phone");
+    // const prevButtonPhone = document.getElementById("prev-icon-phone");
+    // const nextButtonPhone = document.getElementById("next-icon-phone");
 
     prevButtonDesk.addEventListener("click", buttonPrev);
     nextButtonDesk.addEventListener("click", buttonNext);
-    prevButtonPhone.addEventListener("click", buttonPrevPhone);
-    nextButtonPhone.addEventListener("click", buttonNextPhone);
+    // prevButtonPhone.addEventListener("click", buttonPrevPhone);
+    // nextButtonPhone.addEventListener("click", buttonNextPhone);
 
     return () => {
       prevButtonDesk.removeEventListener("click", buttonPrev);
       nextButtonDesk.removeEventListener("click", buttonNext);
-      prevButtonPhone.removeEventListener("click", buttonPrevPhone);
-      nextButtonPhone.removeEventListener("click", buttonNextPhone);
+      // prevButtonPhone.removeEventListener("click", buttonPrevPhone);
+      // nextButtonPhone.removeEventListener("click", buttonNextPhone);
     };
   }, []);
 
@@ -63,15 +63,15 @@ export default function Porto() {
             id="prev-icon-desk"
             className="hidden xl:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
-          <BackwardIcon
+          {/* <BackwardIcon
             id="prev-icon-phone"
             className="xl:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
-          />
+          /> */}
         </div>
 
         {/* Container */}
         <div
-          className="w-full mx-6 md:mx-8 slider-container gap-2 md:gap-4"
+          className="flex w-full mx-6 md:mx-8 max-xl:overflow-x-scroll scrollbar-hide xl:slider-container gap-4"
           id="container"
           ref={containerRef}
         >
@@ -84,10 +84,10 @@ export default function Porto() {
             id="next-icon-desk"
             className="hidden xl:block w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
           />
-          <ForwardIcon
+          {/* <ForwardIcon
             id="next-icon-phone"
             className="xl:hidden w-full text-dark1 hover:fill-dark1 hover:scale-125 transition-all cursor-pointer"
-          />
+          /> */}
         </div>
       </div>
     </section>

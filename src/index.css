@@ -82,7 +82,6 @@
   }
 
   .slider-container {
-    display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
