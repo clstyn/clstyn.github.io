@@ -71,7 +71,7 @@ export default function Porto() {
 
         {/* Container */}
         <div
-          className="flex w-full mx-6 md:mx-8 max-xl:overflow-x-scroll scrollbar-hide xl:slider-container gap-4"
+          className="flex w-full mx-6 md:mx-8 max-xl:overflow-x-scroll scrollbar-hide slider-container gap-4"
           id="container"
           ref={containerRef}
         >
