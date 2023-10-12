@@ -52,8 +52,11 @@ export default function Porto() {
       <h1 className="text-2xl md:text-3xl 2xl:text-5xl text-center font-heading">
         Portofolio
       </h1>
-      <p className="text-center text-sm md:text-xl my-4 font-body font-semibold">
+      <p className="text-center text-sm md:text-xl my-4 font-body font-semibold hidden md:block">
         This website itself is a portofolio!
+      </p>
+      <p className="text-center text-sm md:text-xl my-4 font-body font-semibold md:hidden">
+        Swipe to see more
       </p>
 
       {/* Carousel */}

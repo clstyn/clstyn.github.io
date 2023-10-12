@@ -88,14 +88,6 @@
   animation: flick 3s infinite
 }
 
-.animate-spin {
-  animation: spin 1s linear;
-}
-
-.animate-card-tools {
-  animation: swivle;
-}
-
 @keyframes flick {
   from {
     opacity: 70%;
@@ -107,34 +99,6 @@
 
   to {
     opacity: 70%;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes swivle {
-  0% {
-    width: 100%;
-  }
-  25% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  75% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
   }
 }
 

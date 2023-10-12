@@ -164,8 +164,9 @@ function App() {
 
       {/* Random */}
       {/* <div className="overflow-hidden">
-        <div className="max-md:text-xs bg-dark1 md:h-10 px-2 md:px-9 text-cream font-body font-bold tracking-wider">
-          My random activities...
+        <div className="max-md:text-xs bg-choco md:h-10 px-2 md:px-9 font-body font-bold tracking-wider mt-24">
+          What? You want to know more about me? Here is some other things that I
+          like to do...
         </div>
         <Slider />
       </div> */}

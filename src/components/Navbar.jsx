@@ -10,13 +10,18 @@ const Navbar = () => {
   };
 
   const menu = [
-    { id: 1, value: "About" },
-    { id: 2, value: "Timeline" },
-    { id: 3, value: "Portofolio" },
-    { id: 4, value: "Tools" },
-    { id: 5, value: "Random" },
+    { id: 1, value: "About", toSection: "about" },
+    { id: 2, value: "Timeline", toSection: "timeline" },
+    { id: 3, value: "Portofolio", toSection: "porto" },
+    { id: 4, value: "Tools", toSection: "tools" },
+    { id: 5, value: "Random", toSection: "random" },
   ];
 
+  const handleClickNavbar = (section) => {
+    document
+      .getElementById(section)
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+  };
   return (
     <nav
       role="navigation"
@@ -26,11 +31,16 @@ const Navbar = () => {
         <h1 className="text-lg md:text-xl xl:text-3xl">Fiorenza Celestyn</h1>
 
         <ul className="md:gap-6 lg:gap-16 text-sm xl:text-2xl hidden md:flex">
-          <li>About</li>
-          <li>Timeline</li>
-          <li>Portofolio</li>
-          <li>Tools</li>
-          <li>Random</li>
+          {menu.map((item) => {
+            return (
+              <li
+                className="cursor-pointer"
+                onClick={() => handleClickNavbar(item.toSection)}
+              >
+                {item.value}
+              </li>
+            );
+          })}
         </ul>
 
         <div
@@ -53,7 +63,14 @@ const Navbar = () => {
           >
             {menu.map((item) => {
               return (
-                <div key={item.id} className="py-4">
+                <div
+                  key={item.id}
+                  className="py-4"
+                  onClick={() => {
+                    handleClickNavbar(item.toSection);
+                    toggleNavbarPhone();
+                  }}
+                >
                   {item.value}
                 </div>
               );

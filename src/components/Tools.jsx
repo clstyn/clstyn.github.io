@@ -56,34 +56,36 @@ const imgLogo = [
 const Tools = () => {
   return (
     <div
-      className="bg-choco relative text-dark1 py-16 md:py-32 grid grid-cols-1 md:grid-cols-2 place-content-center min-h-[70vh]"
+      className="bg-choco relative text-dark1 py-16 md:py-32 min-h-[70vh]"
       id="tools"
     >
-      <div className="flex items-start justify-center">
-        <h1 className="text-lg md:text-2xl 2xl:text-4xl font-semibold text-center font-heading relative z-10">
-          What I've used so far...
-        </h1>
-        <img
-          src={Flower}
-          alt="flower ornamen"
-          className="absolute bottom-0 left-0 min-w-[1100px]"
-        />
-      </div>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 place-content-center ">
+        <div className="flex items-start justify-center">
+          <h1 className="text-lg md:text-2xl 2xl:text-4xl font-semibold text-center font-heading relative z-10">
+            What I've used so far...
+          </h1>
+          <img
+            src={Flower}
+            alt="flower ornamen"
+            className="absolute bottom-0 left-0 min-w-[1100px] hidden xl:block"
+          />
+        </div>
 
-      <div>
-        <div className="grid grid-cols-3 md:grid-cols-4 items-center place-items-center p-8 gap-8">
-          {imgLogo.map((item) => {
-            return (
-              <div className="w-36 p-4 shadow-lg">
-                <img
-                  src={item.imgUrl}
-                  alt={item.name}
-                  className="aspect-square object-contain"
-                  key={item.id}
-                />
-              </div>
-            );
-          })}
+        <div>
+          <div className="grid grid-cols-3 md:grid-cols-4 items-center place-items-center p-8 gap-8">
+            {imgLogo.map((item) => {
+              return (
+                <div className="w-24 md:w-36 p-4 shadow-lg">
+                  <img
+                    src={item.imgUrl}
+                    alt={item.name}
+                    className="aspect-square object-contain"
+                    key={item.id}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
