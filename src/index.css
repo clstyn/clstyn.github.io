@@ -102,6 +102,14 @@
   }
 }
 
+.card-tools {
+  transition: transform 2s;
+}
+
+.card-tools:hover {
+  transform: rotateY(360deg);
+}
+
 .slider-container {
   display: flex;
   overflow-x: hidden;

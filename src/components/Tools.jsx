@@ -75,7 +75,7 @@ const Tools = () => {
           <div className="grid grid-cols-3 md:grid-cols-4 items-center place-items-center p-8 gap-8">
             {imgLogo.map((item) => {
               return (
-                <div className="w-24 md:w-36 p-4 shadow-lg">
+                <div className="w-24 md:w-36 p-4 shadow-lg card-tools">
                   <img
                     src={item.imgUrl}
                     alt={item.name}
