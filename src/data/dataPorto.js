@@ -1,6 +1,32 @@
 const dataPorto = [
   {
     id: 1,
+    title: "I-Fit",
+    year: "2024",
+    desc: "A web application to maintain healthy lifestyle. My team and I made this web for I/O Festival competition and won the first place. Five main features are BMI and RDA calculator, calorie calculator, recipe forum, daily challenge, and personal recommendation.",
+    imgUrl: "img/portos/ifit.png",
+    link: "https://i-fit-lilac.vercel.app/",
+    stacks: [
+      {
+        nama: "React",
+        logoUrl: "img/logos/reactjs.png",
+      },
+      {
+        nama: "MongoDB",
+        logoUrl: "img/logos/mongodb.png",
+      },
+      {
+        nama: "Express",
+        logoUrl: "img/logos/expressjs.png",
+      },
+      {
+        nama: "Firebase",
+        logoUrl: "img/logos/firebase.png",
+      },
+    ],
+  },
+  {
+    id: 1,
     title: "Stay in Palihan",
     year: "2023",
     desc: "Created a website to promote the boarding house business in Palihan, Temon, Kulon Progo, as a part of my Community Service Program (KKN-PPM UGM) agenda.",

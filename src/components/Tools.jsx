@@ -62,7 +62,7 @@ const Tools = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 place-content-center ">
         <div className="flex items-start justify-center">
           <h1 className="text-lg md:text-2xl 2xl:text-4xl font-semibold text-center font-heading relative z-10">
-            What I've used so far...
+            Tools
           </h1>
           <img
             src={Flower}

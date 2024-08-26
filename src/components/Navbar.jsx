@@ -14,7 +14,6 @@ const Navbar = () => {
     { id: 2, value: "Timeline", toSection: "timeline" },
     { id: 3, value: "Portofolio", toSection: "porto" },
     { id: 4, value: "Tools", toSection: "tools" },
-    { id: 5, value: "Random", toSection: "random" },
   ];
 
   const handleClickNavbar = (section) => {

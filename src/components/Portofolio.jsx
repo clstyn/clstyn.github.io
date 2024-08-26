@@ -53,7 +53,7 @@ export default function Porto() {
         Portofolio
       </h1>
       <p className="text-center text-sm md:text-xl my-4 font-body font-semibold hidden md:block">
-        This website itself is a portofolio!
+        Projects I've made so far
       </p>
       <p className="text-center text-sm md:text-xl my-4 font-body font-semibold md:hidden">
         Swipe to see more

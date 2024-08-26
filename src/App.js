@@ -130,19 +130,15 @@ function App() {
               About Me
             </h1>
             <p className="font-body md:w-3/4 md:text-3xl mb-8 max-xl:text-justify max-xl:mx-auto relative z-20">
-              <span className="font-bold">Hello there!</span> 🌱 I'm currently a
-              student at Gadjah Mada University, diving headfirst into the world
-              of Information Engineering. 📚 Through my academic journey, I've
-              been lucky to explore the fascinating realm of website
-              development, with a special focus on front-end work.
+              <span className="font-bold">Hello there!</span> I graduated in
+              2024 with a bachelor’s degree in Information Engineering from
+              Gadjah Mada University. My academic journey and experiences have
+              equipped me with practical experience in software development,
+              with a focus on full-stack web development using Node.js. 🌟
             </p>
             <p className="font-body md:w-3/4 md:text-3xl max-xl:mx-auto max-xl:text-justify">
-              💻✨ I'm just a regular person who happens to adapt well to new
-              challenges and enjoys working harmoniously in team settings. 🤝
-              Honesty and a strong sense of responsibility are values I hold
-              dear. 🙏 So, if you're interested in tech, teamwork, and a touch
-              of sincerity, I'm here to learn and grow alongside you. Let's
-              create some wonders together! 🌟
+              💻✨ I am adaptable, thrive in collaborative settings, and
+              prioritize honesty and responsibility in my work.
             </p>
           </div>
         </div>

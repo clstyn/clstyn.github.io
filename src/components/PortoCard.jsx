@@ -17,6 +17,8 @@ export const PortoCard = ({ title, desc, year, imgUrl, stacks, link }) => {
         {link ? (
           <a
             href={link}
+            target="_blank"
+            rel="noreferrer"
             className="block w-fit px-6 py-2 mt-2 md:mt-4 bg-green rounded-full text-xs md:text-lg text-dark1 font-semibold hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#D1BFBD] cursor-pointer hover:transform duration-300"
           >
             Visit
