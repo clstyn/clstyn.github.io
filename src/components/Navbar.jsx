@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const menu = [
     { id: 1, value: "About", toSection: "about" },
-    { id: 2, value: "Timeline", toSection: "timeline" },
+    // { id: 2, value: "Timeline", toSection: "timeline" },
     { id: 3, value: "Portofolio", toSection: "porto" },
     { id: 4, value: "Tools", toSection: "tools" },
   ];
