@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import {
   ChevronDownIcon,
   ChevronDoubleUpIcon,
+  ArrowDownTrayIcon,
 } from "@heroicons/react/24/solid";
 
 import "./App.css";
@@ -64,6 +65,17 @@ function App() {
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/cv_fiorenza.pdf";
+    link.target = "_blank";
+    link.download = "CV_Fiorenza Celestyn.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -140,6 +152,13 @@ function App() {
               💻✨ I am adaptable, thrive in collaborative settings, and
               prioritize honesty and responsibility in my work.
             </p>
+            <div
+              onClick={handleDownload}
+              className="bg-[#FC819E] w-fit px-6 py-4 text-white rounded-full text-xl mt-4 font-semibold cursor-pointer hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#F7418F] cursor-pointer hover:transform duration-300"
+            >
+              CV Download
+              <ArrowDownTrayIcon className="inline-block w-8 pb-1" />
+            </div>
           </div>
         </div>
         <img

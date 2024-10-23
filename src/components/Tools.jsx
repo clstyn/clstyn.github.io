@@ -85,6 +85,8 @@ const Tools = () => {
                 </div>
               );
             })}
+
+            <p className="font-semibold text-lg md:text-2xl">and others.</p>
           </div>
         </div>
       </div>
